@@ -33,7 +33,7 @@
         // Consumir API con fetch
         //Tambien puede buscar el enlace automaticamente para ver el json http://127.0.0.1:8000/productos
 
-        fetch("{{ url('/productos') }}")
+        fetch("{{ url('api/productos') }}")
             .then(response => response.json())
             .then(data => {
                 let tbody = document.getElementById("productos-body");
